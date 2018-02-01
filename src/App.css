@@ -1,0 +1,150 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #DEE6ED;
+  overflow:hidden;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size:12px; 
+  padding:2em;
+  
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  padding:.5em;
+  color:#23343B;
+}
+.panels img{
+  height:200px;
+  border-radius:50%;
+  
+  
+}
+
+
+.text{
+  display:flex;
+  flex-direction: row;
+  width:400px;
+  height:300px;
+  border-right:3px solid #FDA99A;
+  background-color: #F0F5F8;
+  border-right-style: dashed;
+  padding:1em;
+  margin:5px;
+  box-shadow:0 2px #949494;
+}
+
+@keyframes slideInLeft {
+  0%{
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translate3d(0, 100, 0);
+  }
+  100% {
+    transform: translate3d(0, 100, 0);
+  }
+}
+
+.slide{
+  animation: slideInLeft .4s linear;
+}
+
+.name{
+  margin:1.5em;
+}
+h2{
+  color:#fc3e0f;
+}
+
+.members{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding:2em;
+  background-color:#F0F5F8;
+}
+ .members img{
+  height:100px;
+  width:100px;
+  transition: transform 1s;
+}
+.members img:hover{
+  border:1px solid #fc3e0f;
+  border-style: dashed;
+  border-radius:100%;
+  transform: scale(1.6);
+}
+
+.diamonds {
+  margin: 10px;
+}
+
+.diamonds:hover {
+  cursor: pointer;
+}
+
+
+/* ========================================================== */
+@media (max-width: 768px) {
+  body{
+    overflow: visible;
+
+  }
+  .panels{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:.5em;
+  }
+
+  .panels img{
+    width:150px;
+    height:150px;
+  }
+
+  .members{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .members img{
+    height:50px;
+    width:50px;
+  }
+.text{
+  width:300px;
+}
+
+ }
+
+ /* ========================================================== */
+@media (min-width: 768px) and (max-width: 992px) { }
+/* ========================================================== */
+@media (min-width: 992px) and (max-width: 1200px) { }
+/* ========================================================== */
+@media (min-width: 1200px) {
+
+  .members{
+    margin:4.3em;
+    height:130px;
+  }
+ }
+ /* marco did it */
